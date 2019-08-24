@@ -1,3 +1,43 @@
-### Introduction
+### note
 
-This repository just according to alsotang's node-lessons to practice node basic skills, so if you want to learn more, you can just visit alsotang's github: https://github.com/alsotang/node-lessons.
++ 多进程：C
++ 多线程：Java
++ 异步 I/O：Node.js(读写速度慢，异步)
++ 协程：Lua Go
+
+### 核心模块
+
++ Buffer
++ Events
++ File System
++ HTTP
++ OS
++ Path
++ Process
++ ......
+
+
+### 聊天室
+
+#### 需求
+
++ 用户可以在一个简单的表单中输入消息，相互聊天。
++ 消息输入发送后，会发送给同一个聊天室内的其他所有用户。
++ 进入聊天室后，程序会自动给用户分配一个昵称，但他们可以用聊天命令(/)修改自己的昵称。
++ 用户也可以用聊天命令创建新的聊天室（或加入已有的聊天室）。
++ 在加入或创建聊天室时，新聊天室的名称会出现在聊天程序顶端的水平条上。
++ 用户换到新房间后，系统会确认这一变化。
+
+#### 任务
++ 提供静态文件（比如 HTML，CSS 和 客户端 JS）
++ 在服务器上处理与聊天相关的消息
++ 在用户的浏览器中处理与聊天相关的消息
+
+#### 目录结构分析
++ lib：存放服务端逻辑
++ public：存放客户端文件
+    - javascripts
+    - stylesheets
+
+
+

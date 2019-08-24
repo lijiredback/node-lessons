@@ -1,0 +1,25 @@
+{
+  "name": "learn-node",
+  "version": "1.0.0",
+  "description": "just learn basic node",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lijiredback/learn-node.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lijiredback/learn-node/issues"
+  },
+  "homepage": "https://github.com/lijiredback/learn-node#readme",
+  "dependencies": {
+    "cpu-stat": "^2.0.1",
+    "mime": "^2.4.4",
+    "socket.io": "^2.2.0"
+  }
+}

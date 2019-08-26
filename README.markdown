@@ -40,4 +40,6 @@
     - stylesheets
 
 
+### Socket.IO
 
+Socket.IO 为 Node 以及客户端提供了基于 WebSocket 以及其他传输方式的封装。如果浏览器没有实现 WebSocket, Socket.IO 会自动启用一个备选方案。

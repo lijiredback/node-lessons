@@ -3,6 +3,9 @@ const fs = require('fs');
 const path = require('path');
 const mime = require('mime');
 
+const chatServer = require('./lib/chat_server');
+chatServer.listen(server);
+
 
 let cache = {}; // 缓存文件内容
 
@@ -42,7 +45,7 @@ function serveStatic(res, cache, absPath) {
 }
 
 
-http.createServer((req, res) => {
+const server = http.createServer((req, res) => {
     let filePath = false;
     if (req.url === '/') {
         filePath = path.resolve(__dirname, 'public/index.html');
@@ -52,6 +55,8 @@ http.createServer((req, res) => {
 
     let absPath = filePath;
     serveStatic(res, cache, absPath);
-}).listen(3000, () => {
+})
+
+server.listen(3000, () => {
     console.log('Server listening on port 3000');
 });

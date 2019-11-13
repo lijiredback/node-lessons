@@ -9,6 +9,7 @@ const fs = require('fs');
 const { promisify } = require('util');
 const readFile = promisify(fs.readFile);
 readFile('../package.json').then(data => {
-    console.log(data);
+    // buffer 对象的 toString 方法
+    console.log(data.toString());
 })
 
